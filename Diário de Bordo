@@ -59,3 +59,78 @@ Perguntas Respondidas:
 	13)	O que é uma branch?
 	14)	O que significa fazer um merge?
 	15)	O que é um pull request no GitHub?
+
+
+	 Semana #2: Arquitetura, Processos e AWS
+
+AWS
+
+Pessoal, sobre a AWS e EC2 acho legal dar uma olhada na página da AWS mesmo [1, 2]. O texto deles usa um monte de termos técnicos, então anotem os que não entenderem para discutirmos brevemente sobre eles. Criem uma conta lá na AWS e rodem sua primeira máquina usando Ubuntu. Normalmente a AWS marca qual o recomendado. Prestem atenção na hora de rodar para vcs pegarem uma instância elegível ao free tier, assim não terá cobrança nenhuma por um ano.
+
+Para rodar a instância, vcs irão no serviço EC2 (Elastic Compute Cloud) e terão que escolher o tipo de instância (peguem a free tier), depois a imagem AMI (peguem a última versão do Ubuntu), no security group verifiquem que o SSH está liberado (porta 22), finalmente a AWS irá pedir pra vc escolher a chave usada para acessar o servidor. Como vcs não tem chave, peçam para ela gerar e vcs irão fazer download da private key. Essa private key será usada no SSH/PuTTY para abrir um terminal remoto.
+
+[1] https://aws.amazon.com/ec2/
+[2] https://aws.amazon.com/ec2/getting-started/
+
+Projeto: Um jogo web de adivinhe o número.
+
+Descrição do jogo.
+Descrição do fluxo do jogo.
+Diagrama de arquitetura.
+Quais são os processos em cada etapa da arquitetura?
+Primeira versão:
+Páginas estáticas geradas no servidor.
+Estado do jogo armazenado na memória, logo, sem banco de dados.
+
+Tarefas
+
+Criar conta na AWS e subir sua primeira instância de EC2.
+Instalar nginx, acessar pelo seu navegador.
+https://geekylane.com/set-up-a-nginx-web-server-on-ubuntu-18-04-ec2-instance-aws/
+Criar sua primeira página HTML com imagem (vamos usar o GitHub \o/).
+https://html.com/
+https://www.w3schools.com/html/
+Usar CSS na sua página HTML.
+https://html.com/css/
+https://www.w3schools.com/css/
+Fazer o início do curso de bash do Júlio Neves (Papo de Botequim - Shell Linux)
+http://www.wdz.eng.br/WDK/JulioNeves/PapoI.htm
+Fazer deploy da sua página no seu servidor EC2.
+
+Textos sugeridos
+Frontend vs Backend: https://blog.udacity.com/2014/12/front-end-vs-back-end-vs-full-stack-web-developers.html
+Frontend vs Backend: https://en.wikipedia.org/wiki/Front_end_and_back_end
+Gerenciador de pacotes: https://en.wikipedia.org/wiki/APT_(software)
+Gerenciador de pacotes: https://ubuntu.com/server/docs/package-management
+Protocolo HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+API: https://en.wikipedia.org/wiki/Application_programming_interface
+cURL: https://en.wikipedia.org/wiki/CURL
+GitHub API: https://developer.github.com/v3/
+Twitter API: https://developer.twitter.com/en/docs
+Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
+Django: https://www.djangoproject.com/start/overview/
+Django: https://tutorial.djangogirls.org/en/django/
+Framework: https://en.wikipedia.org/wiki/Application_framework
+PIP: (não precisa ler inteiro) https://realpython.com/what-is-pip/
+
+Perguntas
+O que significam os conceitos de Frontend e Backend?
+O que é um gerenciador de pacotes? Que problema ele resolve?
+O que é um Protocolo?
+O que é uma API?
+Qual a diferença entre API e Protocolo?
+Pra que serve o cURL?
+O que é o Python?
+O que é o Flask? Por quê ele existe?
+O que é o Django? Por quê ele existe?
+O que é um framework?
+O que é o PIP? O que é virtualenv?
+Qual a diferença entre um processo monolítico e uma arquitetura de micro-serviços?
+
+Futuro próximo
+
+O que é um linter? Por que é comum usarmos?
+Complexidade computacional.
+Git: Untracked, Unstaged, Committed
+O que é DNS?
+Quais são os tipos de entradas mais comuns no DNS?
